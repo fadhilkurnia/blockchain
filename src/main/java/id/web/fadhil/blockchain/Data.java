@@ -13,7 +13,7 @@ public class Data {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "sender=" + sender + ";receiver=" + receiver + ";payload=" + String.valueOf(payload);
     }
 
 }

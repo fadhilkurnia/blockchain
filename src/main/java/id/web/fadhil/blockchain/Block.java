@@ -10,9 +10,18 @@ public class Block {
         this.data = data;
     }
 
-    public String generateHash() {
-        hash = "asdasdasdasdasdasdas";
+    public void setHash(String hash) {
+        this.hash = hash;
+    }
+
+    public String getHash() {
         return hash;
     }
 
+    @Override
+    public String toString() {
+        return  "<BLOCK>\n"+
+                "previous_hash=" + previousHash + "\n" +
+                "data=" + data.toString() + "\n\n";
+    }
 }

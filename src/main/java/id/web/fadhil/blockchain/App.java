@@ -15,6 +15,14 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println("Hello Blockchain!");
+        Blockchain blockchain = new Blockchain(HashAlgorithm.KECCAK);
+
+        Data def = new Data("fadhil", "someone", "asdasdhgasd".getBytes());
+        Block genesis = new Block("0", def);
+        blockchain.addBlock(genesis);
+        blockchain.addBlock(new Block(genesis.getHash(), def));
+        blockchain.checkIntegrity();
+
     }
 
 }
