@@ -10,8 +10,6 @@
 */
 
 package id.web.fadhil.blockchain;
-import static java.lang.System.*;
-
 
 public class App {
 
