@@ -21,3 +21,4 @@ buildNumber.properties
 .idea/dictionaries
 .idea/vcs.xml
 .idea/jsLibraryMappings.xml
+*.iml
